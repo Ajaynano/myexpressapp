@@ -17,7 +17,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'azure up')
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository max
         uses: actions/checkout@v3
 
       - name: Azure login
